@@ -12,10 +12,10 @@ class ComposerStaticInit21b5ddf749a0e476a9acd841d5904420
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
@@ -331,6 +331,10 @@ class ComposerStaticInit21b5ddf749a0e476a9acd841d5904420
         ),
         'J' => 
         array (
+            'Jenssegers\\Mongodb\\Session' => 
+            array (
+                0 => __DIR__ . '/..' . '/jenssegers/mongodb-session/src',
+            ),
             'Jenssegers\\Mongodb' => 
             array (
                 0 => __DIR__ . '/..' . '/jenssegers/mongodb/src',
@@ -350,6 +354,7 @@ class ComposerStaticInit21b5ddf749a0e476a9acd841d5904420
     );
 
     public static $classMap = array (
+        'App\\Appointment' => __DIR__ . '/../..' . '/app/Appointment.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -358,6 +363,10 @@ class ComposerStaticInit21b5ddf749a0e476a9acd841d5904420
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\SiteController' => __DIR__ . '/../..' . '/app/Http/Controllers/SiteController.php',
+        'App\\Http\\Controllers\\SlotController' => __DIR__ . '/../..' . '/app/Http/Controllers/SlotController.php',
+        'App\\Http\\Controllers\\TrainerController' => __DIR__ . '/../..' . '/app/Http/Controllers/TrainerController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -371,6 +380,8 @@ class ComposerStaticInit21b5ddf749a0e476a9acd841d5904420
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Slot' => __DIR__ . '/../..' . '/app/Slot.php',
+        'App\\Trainer' => __DIR__ . '/../..' . '/app/Trainer.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
@@ -1849,6 +1860,8 @@ class ComposerStaticInit21b5ddf749a0e476a9acd841d5904420
         'Jenssegers\\Mongodb\\Schema\\Blueprint' => __DIR__ . '/..' . '/jenssegers/mongodb/src/Jenssegers/Mongodb/Schema/Blueprint.php',
         'Jenssegers\\Mongodb\\Schema\\Builder' => __DIR__ . '/..' . '/jenssegers/mongodb/src/Jenssegers/Mongodb/Schema/Builder.php',
         'Jenssegers\\Mongodb\\Schema\\Grammar' => __DIR__ . '/..' . '/jenssegers/mongodb/src/Jenssegers/Mongodb/Schema/Grammar.php',
+        'Jenssegers\\Mongodb\\Session\\SessionManager' => __DIR__ . '/..' . '/jenssegers/mongodb-session/src/Jenssegers/Mongodb/Session/SessionManager.php',
+        'Jenssegers\\Mongodb\\Session\\SessionServiceProvider' => __DIR__ . '/..' . '/jenssegers/mongodb-session/src/Jenssegers/Mongodb/Session/SessionServiceProvider.php',
         'Jenssegers\\Mongodb\\Validation\\DatabasePresenceVerifier' => __DIR__ . '/..' . '/jenssegers/mongodb/src/Jenssegers/Mongodb/Validation/DatabasePresenceVerifier.php',
         'Jenssegers\\Mongodb\\Validation\\ValidationServiceProvider' => __DIR__ . '/..' . '/jenssegers/mongodb/src/Jenssegers/Mongodb/Validation/ValidationServiceProvider.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',

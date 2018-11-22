@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('add','TrainerController@store');
 Route::post('add-slot','SlotController@store');
+Route::get('/trainer/{id}', 'TrainerController@show');

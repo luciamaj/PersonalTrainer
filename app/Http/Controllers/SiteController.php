@@ -7,9 +7,8 @@ use DB;
 
 class SiteController extends Controller
 {
-    public function index() {
-
-        $users = DB::collection('trainers_collection')->get();
+    public function indexUsers() {
+        $users = DB::collection('users_collection')->get();
         return $users;
     }
 }

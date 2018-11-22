@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Trainer;
 
 use Illuminate\Http\Request;
 
-class TrainerController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,7 +23,7 @@ class TrainerController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -35,11 +34,7 @@ class TrainerController extends Controller
      */
     public function store(Request $request)
     {
-        $trainer = new Trainer();
-        $trainer->name = $request->get('name');
-        $trainer->surname = $request->get('surname');
-        $trainer->save();
-        return $trainer;
+        //
     }
 
     /**
@@ -50,8 +45,7 @@ class TrainerController extends Controller
      */
     public function show($id)
     {
-        $trainer = Trainer::find($id);
-        return $trainer;
+        //
     }
 
     /**
